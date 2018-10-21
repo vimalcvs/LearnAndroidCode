@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="11dp"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ExtrasCall">
+
+
+
+    <LinearLayout
+        android:id="@+id/LL_ExtrasCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="11dp"
+        android:background="@color/colorBlackTransparent"
+        >
+        <EditText
+            android:id="@+id/etPhoneNoExtrasCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number.."
+            android:inputType="phone"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/blue_button"
+            />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RL_ExtrasCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="11dp"
+            android:background="@color/colorBlackTransparent">
+
+            <TextView
+                android:id="@+id/tvDescLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can add calling module in your app."
+                android:layout_below="@+id/tvDescLabel"
+                android:textColor="@color/colorWhite"
+                />
+
+            <TextView
+                android:id="@+id/tvCodeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/code"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDesc"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvStep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_1"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvCodeLabel"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvDescStep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add these to your Manifest.xml file."
+                android:layout_below="@+id/tvStep1"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/ivCodeCallStep1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvDescStep1"
+                android:src="@drawable/call_step1"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                />
+
+
+            <TextView
+                android:id="@+id/tvStep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_2"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/ivCodeCallStep1"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvDescStep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In your xml create layout to call(you can also add phone number directly).."
+                android:layout_below="@+id/tvStep2"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/ivCodeCallStep2"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/tvDescStep2"
+                android:src="@drawable/call_step2"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                />
+
+
+            <TextView
+                android:id="@+id/tvStep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_3"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/ivCodeCallStep2"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvDescStep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In your Java File you can check for Call permission and call method Call() to call number."
+                android:layout_below="@+id/tvStep3"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/ivCodeCallStep3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tvDescStep3"
+                android:src="@drawable/call_step3"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                />
+
+            <TextView
+                android:id="@+id/tvStep4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_4"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/ivCodeCallStep3"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tvDescStep4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can Call using this code."
+                android:layout_below="@+id/tvStep4"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/ivCodeCallStep4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tvDescStep4"
+                android:src="@drawable/call_step4"
+                android:layout_marginTop="7dp"
+                android:contentDescription="@string/app_name"
+                />
+
+
+            <Button
+                android:id="@+id/btnDemoCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo"
+                android:textAllCaps="false"
+                android:padding="11dp"
+                android:background="@drawable/blue_button"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_below="@+id/ivCodeCallStep4"
+                android:layout_marginTop="17dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

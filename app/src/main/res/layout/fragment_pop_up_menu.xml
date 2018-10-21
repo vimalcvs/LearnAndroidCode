@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Frag_PopUpMenu"
+    android:background="@drawable/back"
+    android:padding="11dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="11dp"
+        android:background="@color/colorBlackTransparent"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnButtonPopUpMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On Button\\Image Click"
+            android:textAllCaps="false"
+            android:padding="11dp"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            />
+
+
+        <Button
+            android:id="@+id/btnToolbarPopUpMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On Toolbar"
+            android:textAllCaps="false"
+            android:padding="11dp"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_below="@+id/btnButtonPopUpMenu"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
